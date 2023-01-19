@@ -1,0 +1,171 @@
+#sign-div {
+
+    margin: auto;
+
+    height: 620px;
+    width: 350px;
+    border: 1px solid transparent;
+    /* background-color: #a09e9e; */
+    
+}
+
+#main-sign {
+    /* margin-top: 50px;
+    margin-left: 550px; */
+    margin: auto;
+    height: 680px;
+    width: 400px;
+    border: 1px solid transparent;
+    background-color: #eeeaea;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#welcome {
+    /* margin-left: 22px; */
+    font-size: 27px;
+    color: rgb(8, 8, 8);
+    font-family: sans-serif;
+}
+
+#join {
+    margin-top: 32px;
+    font-size: 14px;
+    color: rgb(19, 18, 18);
+    line-height: 5px;
+    font-family: sans-serif;
+}
+
+#main-logo-div {
+    height: 130px;
+    width: 100%;
+
+}
+
+#logos {
+    /* margin: auto; */
+    display: flex;
+    gap: 10px;
+    width: 300px;
+    height: 43px;
+    margin-top: 30px;
+    /* justify-content: space-around; */
+}
+
+#facebook {
+
+    height: 100%;
+    width: 48%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    color: rgb(108, 89, 152);
+    border: 2px solid rgb(60, 60, 133);
+  
+
+
+}
+
+#google {
+    display: flex;
+    color: rgb(223, 86, 72);
+    align-items: center;
+    font-size: 16px;
+    height: 100%;
+    width: 52%;
+    border: 2px solid red;
+}
+
+#logo2>p {
+    margin-right: 10px;
+}
+
+#g-img {
+
+    /* margin: auto; */
+    height: 90%;
+    width: 70px;
+    margin-top: 2%;
+
+
+}
+
+#f-img {
+
+    /* margin: auto; */
+    height: 100%;
+    width: 40px;
+    margin-top: 2%;
+}
+
+#or {
+    color: #A9A9A9;
+    border-bottom: #A9A9A9;
+    text-align: center;
+    font-family: sans-serif;
+   margin-right: 15%;
+   margin-top: 10% ;
+}
+
+#main-email {
+    width: 290px;
+    height: 85px;
+    font-family: sans-serif;
+
+    /* margin: auto; */
+}
+
+#email {
+    font-size: 13px;
+    color: black;
+}
+
+#search {
+    width: 98%;
+}
+
+#continue-btn {
+    border: transparent;
+    height: 40px;
+    width: 150px;
+    color: white;
+    background-color: rgb(213, 162, 73);
+    cursor: pointer;
+}
+
+#last {
+    display: flex;
+    /* margin-left: 19px; */
+    margin-top: 14px;
+    gap: 10px;
+    font-size: 12px;
+    color: rgb(160, 160, 162);
+    font-family: sans-serif;
+}
+
+#last-p {
+    color: rgb(98, 171, 214);
+}
+
+#button-div {
+    width: 100%;
+    height: 30px;
+    border: 1px solid transparent;
+
+}
+
+#sign-button {
+    margin-left: 335px;
+    /* height:30px; */
+    background-color: transparent;
+    font-size: 34px;
+    border: none;
+    cursor: pointer;
+}
+
+#search {
+
+    border: transparent;
+    height: 30px;
+    border-bottom: 1px solid black;
+}
