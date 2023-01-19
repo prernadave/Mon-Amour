@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+    
+</head>
+<body>
+    <div id="main-sign">
+    <div id="sign-div">
+        <div id="button-div">
+            <button id="sign-button">&times;</button>
+        </div>
+        
+        <div>
+        <div>
+            <h1 id="welcome">Welcome to Mon Amour</h1>
+            
+        </div>
+        <div id="main-logo-div">
+            <div><p id="join">Join / Sign In using</p></div>
+            <div id="logos">
+                <div id="facebook">
+                    <div><img id="f-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDcpjZNj76WYGXFCt2UJjTdHXKgc-F9iUSdSMQmnE2BBmc5xhR9SDpW1cLGor0RHCJX1k&usqp=CAU" alt=""></div>
+                    <div><p>FACEBOOK</p></div>
+                </div>
+                <div id="google">
+                    <div><img id="g-img" src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt=""></div>
+                    <div> <p>GOOGLE</p></div>
+                   
+                 
+                </div>
+            </div>
+           <p id="or">-Or-</p>
+        </div>
+        <div id="main-email">
+            <p id="email">Enter Mobile Number / Email*</p>
+            <input  id="search" type="text" >
+        </div>
+        <div>
+            <button onclick="cont()" id="continue-btn">CONTINUE</button>
+        </div>
+        <div id="last">
+            <p>By Signing In, I agree to</p>
+            <p id="last-p">Terms and Conditions.</p>
+        </div>
+   
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    function cont(){
+
+        let arr = JSON.parse(localStorage.getItem("num_local"))||[] ;
+
+        let obj = {
+            number : document.getElementById("search").value,
+        };
+
+        arr.push(obj);
+        
+        localStorage.setItem("num_local", JSON.stringify(arr));
+
+
+
+        window.location.href="signup.html";
+    }
+</script>
+
