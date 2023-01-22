@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,67 +9,190 @@
     <title>Login</title>
     
 </head>
+
 <body>
-    <div id="main-sign">
-    <div id="sign-div">
-        <div id="button-div">
-            <button id="sign-button">&times;</button>
+
+    <!-- ------------------------------------------------ navbar----------------------------------------------------------- -->
+
+
+    <nav id="navbar">
+
+        <!-- nav left part - logo -->
+        <div id="logo">
+            <img id="img-logo" src="../images/Mon Amour edit.png" alt="logo">
         </div>
-        
-        <div>
-        <div>
-            <h1 id="welcome">Welcome to Mon Amour</h1>
-            
-        </div>
-        <div id="main-logo-div">
-            <div><p id="join">Join / Sign In using</p></div>
-            <div id="logos">
-                <div id="facebook">
-                    <div><img id="f-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDcpjZNj76WYGXFCt2UJjTdHXKgc-F9iUSdSMQmnE2BBmc5xhR9SDpW1cLGor0RHCJX1k&usqp=CAU" alt=""></div>
-                    <div><p>FACEBOOK</p></div>
-                </div>
-                <div id="google">
-                    <div><img id="g-img" src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt=""></div>
-                    <div> <p>GOOGLE</p></div>
-                   
-                 
-                </div>
+
+        <!-- nav right upper part -->
+        <div id="upper">
+            <div id="login-sign">
+                <!-- nav-up - nav upper para -->
+                <a href="login.html">
+                    <p class="nav-up">Sign In / <a href="signup.html">Join Mon Amour</a> </p>
+                </a>
+
+                <a href="cust-care.html">
+                    <p class="nav-up">Customer Care</p>
+                </a>
+
+                <button id="luxe">Visit MONLUXE</button>
             </div>
-           <p id="or">-Or-</p>
+
+            <!-- nav bar lower part -->
+
+            <div id="lower">
+                <a href="../html/men.page.html">
+                    <p class="nav-text">MEN </p>
+                </a>
+                <a href="../html/women.page.html">
+                    <p class="nav-text">WOMEN</p>
+                </a>
+                <p class="nav-text">KIDS</p>
+                <p class="nav-text">INDIE</p>
+                <p class="nav-text">HOME AND KITCHEN</p>
+                <input id="nav-inp" type="text" placeholder="Search Mon">
+                <button type="submit" class="submit">Search</button>
+                <img id="bar" src="../images/heart-solid.svg" alt="">
+                <img id="bar" src="../images/bag-shopping-solid.svg" alt="">
+
+            </div>
         </div>
-        <div id="main-email">
-            <p id="email">Enter Mobile Number / Email*</p>
-            <input  id="search" type="text" >
-        </div>
-        <div>
-            <button onclick="cont()" id="continue-btn">CONTINUE</button>
-        </div>
-        <div id="last">
-            <p>By Signing In, I agree to</p>
-            <p id="last-p">Terms and Conditions.</p>
-        </div>
-   
+    </nav>
+
+
+<!-- ----------------------------------------login form--------------------------------------------------------------- -->
+    <div>
+        <form id="login" class="bg-text" action="">
+            <label for="">Email</label><br>
+            <input id="login_details" type="text"><br>
+            <label for="">PASSWORD</label><br>
+            <input id="password_details" type="password"><br>
+            <input onclick="just_clicked()" type="submit">
+        </form>
     </div>
-</div>
+
+ <!-- ------------------------------------------------------footer------------------------------------------------- -->
+
+
+    <footer style="background-color:#F1ECCC; margin-top: 35%;">
+        <div id="footer-row">
+            <div>
+                <h3>Mon Amour</h3>
+                <ul>
+
+                    <li>Who we are</li>
+                    <li>Join Our Team</li>
+                    <li>Terms And Conditions</li>
+                    <li>We Respect Your Privacy</li>
+                    <li>Returns And Refund Policy</li>
+
+                </ul>
+            </div>
+
+            <div>
+                <h3>Help</h3>
+                <ul>
+
+                    <li>Track Your Order </li>
+                    <li>Frequently Asked Quest</li>
+                    <li>Returns</li>
+                    <li>Cancellations</li>
+                    <li>Payments</li>
+                    <li>CustomerCare</li>
+                    <li>How Do I Redeem My Coupon</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3>Shop by</h3>
+                <ul>
+
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Indie Stores</li>
+                    <li>New Arrivals</li>
+                    <li>Brand Directory</li>
+                    <li>HomeCollections</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3>Follow us</h3>
+                <ul>
+
+                    <li>Facebook</li>
+                    <li>Instagram-MONAMOURlife</li>
+                    <li>Instagram-MONAMOURLUXE</li>
+                    <li>Twitter
+                    </li>
+                    <li>Pinterest
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <h4 style="text-align: center; color: grey;">
+            ____________________________________________________________________________________________________________________________
+        </h4>
+        <div class="payment" style="display: flex; justify-content: space-around;color: grey;">
+            <div>
+                <h4>Payments Method</h4>
+                <span>Net Banking </span> <span>Verified by VSA </span><span>Secure System </span> <span>Cash on
+                    Delivery </span>
+            </div>
+
+            <div>
+                <h4>Secure Systems</h4>
+
+            </div>
+        </div>
+    </footer>
+
+
 </body>
+
+
 </html>
 
+
+
+<!-- -----------------------------------------------login----------------------------- -->
+
 <script>
-    function cont(){
+    const just_clicked = () => {
+        const login_value = document.getElementById('login')
+        login_value.addEventListener("click", async function (e) {
+            e.preventDefault()
+            const email = document.getElementById('login_details')
+            const password = document.getElementById('password_details')
 
-        let arr = JSON.parse(localStorage.getItem("num_local"))||[] ;
+            const userObject = {
+                email: email.value,
+                password: password.value
+            }
+            console.log(userObject);
 
-        let obj = {
-            number : document.getElementById("search").value,
-        };
-
-        arr.push(obj);
-        
-        localStorage.setItem("num_local", JSON.stringify(arr));
-
-
-
-        window.location.href="signup.html";
+            fetch('http://localhost:4000/login', {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(userObject),
+            }).then((respond) => {
+                return respond.json()
+            }).then((data) => {
+                console.log(data);
+                localStorage.setItem('Token', data.token)
+                alert(`successfully logged in`)
+                window.location.href = 'index.html'
+            }).catch((error) => {
+                console.log({ 'error': error });
+            })
+        })
     }
-</script>
 
+
+</script>

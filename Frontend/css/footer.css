@@ -1,0 +1,36 @@
+
+footer{
+    background-color:grey;
+    
+}
+
+#footer-row {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    margin-top: -1%;
+    padding-top: 4%;
+    line-height: 140%;
+    color:black
+  }
+  
+  li{text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    }
+  
+  
+  h3 {
+    color:black;
+    margin-top: 25%;
+  }
+  
+  span+span {
+    margin-left: 2em;
+    line-height: 3%;
+  }
+  
+  .payment {
+    padding-bottom: 60px;
+    margin-top: 2%;
+  }

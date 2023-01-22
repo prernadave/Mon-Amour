@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
@@ -27,7 +28,7 @@
             <div id="login-sign">
                 <!-- nav-up - nav upper para -->
                 <a href="login.html">
-                    <p class="nav-up">Sign In / Join Mon Amour</p>
+                    <p class="nav-up">Sign In / <a href="signup.html">Join Mon Amour</a> </p>
                 </a>
 
                 <a href="cust-care.html">
@@ -40,12 +41,17 @@
             <!-- nav bar lower part -->
 
             <div id="lower">
-                <p class="nav-text">MEN </p>
-                <p class="nav-text">WOMEN</p>
+                <a href="../html/men.page.html">
+                    <p class="nav-text">MEN </p>
+                </a>
+                <a href="../html/women.page.html">
+                    <p class="nav-text">WOMEN</p>
+                </a>
                 <p class="nav-text">KIDS</p>
                 <p class="nav-text">INDIE</p>
                 <p class="nav-text">HOME AND KITCHEN</p>
                 <input id="nav-inp" type="text" placeholder="Search Mon">
+
                 <img id="bar" src="../images/heart-solid.svg" alt="">
                 <img id="bar" src="../images/bag-shopping-solid.svg" alt="">
 
@@ -56,6 +62,10 @@
     <!-- --------------------------------------------------------------------------navbar ends here------------------------------------------------------------- -->
 
     <div id="container">
+
+        <div style="margin-top: -1.5%; ">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/UHP-D-Urgency74Hrs-LastFewHours-1440x128.jpg" alt="">
+        </div>
 
         <!-- first slider -->
         <div class="slider" style="margin-top: -1.4%;">
@@ -185,7 +195,7 @@
 
     </div>
 
-    <footer style="background-color: rgb(40, 91, 91);">
+    <footer style="background-color:grey;">
         <div id="footer-row">
             <div>
                 <h3>Ajio</h3>
@@ -287,5 +297,10 @@
             prevEl: ".swiper-button-prev",
         },
     });
+
+
+    
+    
+
 
 </script>
