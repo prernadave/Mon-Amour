@@ -1,90 +1,167 @@
-DISRUPT
-Slim-Fit Crop Top
-₹454
+[
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20220523/UtPi/628b8cccf997dd03e21563d8/-473Wx593H-464368597-red-MODEL2.jpg",
+    "brand": "SOCH",
+    "product": "Embroidered Georgette Saree with Blouse Piece |",
+    "gender": "female",
+    "category": "saree",
+    "price": 4499,
+    "strikedOffPrice": 5500
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20220917/Wq3x/6324e325f997dd1f8d05f4b9/-1117Wx1400H-465006921-green-MODEL.jpg",
+    "brand": "VASTRANAND",
+    "product": "Floral Print Saree with Unstitched Blouse Piece |",
+    "gender": "female",
+    "category": "saree",
+    "price": 2444,
+    "strikedOffPrice": 4000
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20220627/yX5w/62b9c278f997dd03e29fa534/-1117Wx1400H-464547663-purple-MODEL.jpg",
+    "brand": "SOCH",
+    "product": "Floral Embroidered Georgette Saree |",
+    "gender": "female",
+    "category": "saree",
+    "price": "3998",
+    "strikedOffPrice": "4500"
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221114/5T1E/63722ee2aeb269659c8ab406/-1117Wx1400H-465010210-white-MODEL.jpg",
+    "brand": "JINAL & JINAL",
+    "product": "Kalamkari Zardozi Saree with Blouse Piece |",
+    "gender": "female",
+    "category": "saree",
+    "price": 2837,
+    "strikedOffPrice": 3500
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20210629/D9kh/60da69cbf997ddb31212a9d6/-1117Wx1400H-462568554-maroon-MODEL.jpg",
+    "brand": "ETHNIC JUNCTION",
+    "product": "Kalamkari Print Khadi Silk Saree with Blouse Piece |",
+    "gender": "female",
+    "category": "saree",
+    "price": 499,
+    "strikedOffPrice": 700
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221206/qyP3/638e7bebaeb269659cd4a1e1/-1117Wx1400H-465395736-blue-MODEL.jpg",
+    "brand": "SAREE MALL",
+    "product": "Floral Pattern Silk Saree |",
+    "gender": "female",
+    "category": "saree",
+    "price": 3915,
+    "strikedOffPrice": 4500
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20220914/AsmE/632113a0f997dd1f8dfdd9a2/-1117Wx1400H-464978303-green-MODEL2.jpg",
+    "brand": "HRITIKA",
+    "product": "Embroidered Saree with Unstitched Blouse Piece |",
+    "gender": "female",
+    "category": "saree",
+    "price": 1299,
+    "strikedOffPrice": 2000
+  },
+ 
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221005/oxL3/633c89caf997ddfdbd079222/-473Wx593H-469266328-emeraldgreen-MODEL4.jpg",
+    "brand": "FYRE ROSE",
+    "product": "V-Neck Infinity Dress with Tie-Up",
+    "gender": "female",
+    "category": "dress",
+    "price": 2069,
+    "strikedOffPrice": 3069
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221116/H1Y5/6373fe79aeb269659c906681/-1117Wx1400H-465281261-maroon-MODEL.jpg",
+    "brand": "TWENTY DRESSES",
+    "product": "Square-Neck Gown Dress",
+    "gender": "female",
+    "category": "dress",
+    "price": 2096,
+    "strikedOffPrice": 5999
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221114/G63N/6372643faeb269659c8befb0/-1117Wx1400H-469371975-pink-MODEL.jpg",
+    "brand": "Y-LONDON",
+    "product": "Shimmer One-Shoulder Sheath Dress",
+    "gender": "female",
+    "category": "dress",
+    "price": 2219,
+    "strikedOffPrice": 3000
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221006/F71z/633eec8af997ddfdbd099b5f/-473Wx593H-469207556-black-MODEL4.jpg",
+    "brand": "LC WAIKIKI",
+    "product": "Relaxed Fit Fit & Flare Dress",
+    "gender": "female",
+    "category": "dress",
+    "price": 2058,
+    "strikedOffPrice": 3000
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221116/JCTC/6373ff35aeb269659c907cb7/-1117Wx1400H-465282363-black-MODEL.jpg",
+    "brand": "TWENTY DRESSES",
+    "product": "Embellished A-Line Dress",
+    "gender": "female",
+    "category": "dress",
+    "price": 2471,
+    "strikedOffPrice": 3500
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20220921/YYeg/632b41b1aeb269dbb39d3af9/-1117Wx1400H-469189189-cobalt-MODEL.jpg",
+    "brand": "I SAW IT FIRST",
+    "product": "Embellished Strappy Bodycon Dress",
+    "gender": "female",
+    "category": "dress",
+    "price": 2073,
+    "strikedOffPrice": 3567
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20220909/G4V7/631ac9f6f997dd1f8df0f903/-1117Wx1400H-464747812-wine-MODEL.jpg",
+    "brand": "JUST WOW",
+    "product": "Embellished Fit & Flare Dress",
+    "gender": "female",
+    "category": "dress",
+    "price": 2429,
+    "strikedOffPrice": 3567
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221114/4ceX/63721fa1f997ddfdbd707384/-1117Wx1400H-465267368-multi-MODEL.jpg",
+    "brand": "TWENTY DRESSES",
+    "product": "Floral V-Neck Fit and Flare Mini Dress",
+    "gender": "female",
+    "category": "dress",
+    "price": 2236,
+    "strikedOffPrice": 3470
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221224/adQF/63a67810f997ddfdbdf3f7cf/-1117Wx1400H-465489568-black-MODEL2.jpg",
+    "brand": "STYLI",
+    "product": "Collar-Neck Shirt Dress",
+    "gender": "female",
+    "category": "dress",
+    "price": 2249,
+    "strikedOffPrice": 4000
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221115/zpQB/6373ae40aeb269659c8f04d0/-1117Wx1400H-469371921-grey-MODEL.jpg",
+    "brand": "Y-LONDON",
+    "product": "Shimmer One-Shoulder Bodycon Dress",
+    "gender": "female",
+    "category": "dress",
+    "price": 2404,
+    "strikedOffPrice": 3567
+  },
+  {
+    "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221224/DQKG/63a67659aeb269659c083a49/-1117Wx1400H-465489561-pink-MODEL4.jpg",
+    "brand": "ZINK LONDON",
+    "product": "Sweetheart-Neck A-Line Dress",
+    "gender": "female",
+    "category": "dress",
+    "price": 2399,
+    "strikedOffPrice": 4500
+  }
+]
 
-{
-  "imageURL": "https://assets.ajio.com/medias/sys_master/root/20220727/Zi4G/62e053edaeb26921af9efd3c/-1117Wx1400H-464719623-yellow-MODEL.jpg",
-  "brand": "DISRUPT",
-  "product": "Slim-Fit Crop Top",
-  "gender": "female",
-  "category": "top",
-  "price": 454,
-  "strikedOffPrice": 1000
-}
 
-FIG
-Floral Print Top with Curved Hem
-MRP₹699
-{
-  "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221122/p9H1/637ca711f997ddfdbd8e4116/-1117Wx1400H-443004335-pink-MODEL.jpg",
-  "brand": "FIG",
-  "product": "Floral Print Top with Curved Hem",
-  "gender": "female",
-  "category": "top",
-  "price": 699,
-  "strikedOffPrice": 1100
-}
-
-PRETTIFY
-Square-Neck Full-Sleeve Top
-₹702
-
-{
-  "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221201/2pNs/6387c8abf997ddfdbdae54dd/-1117Wx1400H-465366837-olive-MODEL4.jpg",
-  "brand": "PRETTIFY",
-  "product": "Square-Neck Full-Sleeve Top",
-  "gender": "female",
-  "category": "top",
-  "price": 702,
-  "strikedOffPrice": 1100
-}
-MISS CHASE
-Solid Top with Peter Pan Collar
-₹577
-{
-  "imageURL": "https://assets.ajio.com/medias/sys_master/root/20210403/s5ws/60685e0d7cdb8c1f14748222/-1117Wx1400H-461044318-blue-MODEL.jpg",
-  "brand": "MISS CHASE",
-  "product": "Solid Top with Peter Pan Collar",
-  "gender": "female",
-  "category": "top",
-  "price": 577,
-  "strikedOffPrice": 1050
-}
-
-SHAYE
-Floral Print V-neck Top
-₹1,
-420
-{
-  "imageURL": "https://assets.ajio.com/medias/sys_master/root/20220601/sh0F/6296ea21aeb26921af01d41b/-1117Wx1400H-462506144-cream-MODEL.jpg",
-  "brand": "SHAYE",
-  "product": "Floral Print V-neck Top",
-  "gender": "female",
-  "category": "top",
-  "price": 1429,
-  "strikedOffPrice": 2000
-}
-TIOR
-Floral Print Square-Neck Peplum Top
-₹600
-{
-  "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221104/dnrr/636526a1aeb269659c72c5f5/-1117Wx1400H-465138366-white-MODEL.jpg",
-  "brand": "TIOR",
-  "product": "Floral Print Square-Neck Peplum Top",
-  "gender": "female",
-  "category": "top",
-  "price": 600,
-  "strikedOffPrice": 9000
-}
-LAGASHI
-Slim Fit Square-Neck Top
-₹750
-{
-  "imageURL": "https://assets.ajio.com/medias/sys_master/root/20221214/Exgb/6398f077f997ddfdbdd31096/-1117Wx1400H-465434154-black-MODEL.jpg",
-  "brand": "LAGASHI",
-  "product": "Slim Fit Square-Neck Top",
-  "gender": "female",
-  "category": "top",
-  "price": 740,
-  "strikedOffPrice": 1100
-}

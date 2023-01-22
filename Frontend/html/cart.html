@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f214957bb7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+
+    <style>
+      
+
+        #product_main_container {
+           
+            display: flex;
+            width: 80%;
+            font-family: sans-serif;
+            margin: auto;
+        }
+
+        .detail_left {
+           
+            width: 100%;
+        }
+
+        .detail_left img {
+            width: 26%;
+            /* border: 1px solid red; */
+        }
+
+        h4 {
+            text-align: center;
+            margin-top: -4%;
+            color: #5a5a55;
+            margin-left: 20%;
+        }
+
+        h3 {
+            margin-top: 2%;
+        }
+
+        .detail_left div {
+            border: 1px solid rgb(211, 153, 153);
+            width: 50%;
+            justify-content: space-around;
+            text-align: right;
+            height: 20px;
+            margin-top: -4%;
+            font-size: 18px;
+        }
+
+        .product_right_container {
+            /* border: 1px solid rgb(110, 110, 6); */
+            width: 30%;
+            margin-left: 20%;
+        }
+
+        .orderdetails {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        #bag {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bag_total {
+            color: rgb(88, 84, 84);
+            font-size: 20px;
+        }
+
+        .bag_total_price {
+            font-size: 20px;
+            margin-top: -5%;
+        }
+
+        .deliv {
+            color: rgb(88, 84, 84);
+            font-size: 20px;
+            margin-top: -2%;
+        }
+
+        .total {
+            font-size: 20px;
+            margin-top: 6%;
+        }
+
+        .totalamount {
+            font-size: 20px;
+        }
+
+        .shipping_btn {
+            width: 100%;
+            height: 50px;
+            margin: auto;
+            background-color: #0c0c0c;
+            border: 1px solid #0c0c0c;
+            color: white;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        .shipping_btn:hover {
+            outline: 1px solid;
+            border: 3px solid #5a5a55;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .bottom_icons {
+            display: flex;
+            width: 70%;
+            margin-top: 1%;
+            margin-left: 23%;
+            /* border: 3px solid #5a5a55; */
+        }
+
+        .exchange_icons {
+            /* border:1px solid red; */
+            width: 100%;
+            margin: auto;
+        }
+
+        .exchange_icons img {
+            width: 20%;
+        }
+
+
+      
+
+
+        .product_left_container {
+            height: 450px;
+            overflow-y: scroll;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+
+        <!-- nav left part - logo -->
+        <div id="logo">
+            <img id="img-logo" src="../images/Mon Amour edit.png" alt="logo">
+        </div>
+
+        <!-- nav right upper part -->
+        <div id="upper">
+            <div id="login-sign">
+                <!-- nav-up - nav upper para -->
+                <a href="login.html">
+                    <p class="nav-up">Sign In / <a href="signup.html">Join Mon Amour</a> </p>
+                </a>
+
+                <a href="cust-care.html">
+                    <p class="nav-up">Customer Care</p>
+                </a>
+
+                <button id="luxe">Visit MONLUXE</button>
+            </div>
+
+            <!-- nav bar lower part -->
+
+            <div id="lower">
+                <a href="../html/men.page.html">
+                    <p class="nav-text">MEN </p>
+                </a>
+                <a href="../html/women.page.html">
+                    <p class="nav-text">WOMEN</p>
+                </a>
+                <p class="nav-text">KIDS</p>
+                <p class="nav-text">INDIE</p>
+                <p class="nav-text">HOME AND KITCHEN</p>
+                <input id="nav-inp" type="text" placeholder="Search Mon">
+                
+                <img id="bar" src="../images/heart-solid.svg" alt="">
+                <img id="bar" src="../images/bag-shopping-solid.svg" alt="">
+
+            </div>
+        </div>
+    </nav>
+
+    
+    <h2 style="text-align: center; margin-bottom: 3%;">My Bag</h2>
+
+
+    <div id="product_main_container">
+
+        <div class="product_left_container">
+
+            <div class="detail_left">
+                
+            </div>
+
+        </div>
+
+
+        <div class="product_right_container">
+
+            <div class="orderdetails">Order Details</div><br>
+
+            <div id="bag">
+                <div class="bag_total">Bag Total</div>
+                <div class="bag_total_price"></div>
+            </div><br>
+
+            <div id="bag">
+                <div class="deliv">Delivery</div>
+                <div>FREE</div>
+            </div><br>
+
+            <div id="bag">
+                <div class="total">Total Amount</div>
+                <div class="totalamount"></div>
+            </div><br>
+
+            <a href="./address.html"><button class="shipping_btn">PROCEED TO SHIPPING</button></a>
+
+        </div>
+
+    </div> <br> <br><br>
+    <hr class="hr">
+
+
+    <div class="bottom_icons">
+        <div class="exchange_icons">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSleffsgSsashwROvgH26qoTpSqlQBMe0Shd5emGuHC7qRZTl"
+                alt=""><br><br>
+            <div>EASY EXCHANGE</div>
+        </div>
+
+        <div class="exchange_icons">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStPsdLlQq9T_-o_ndL1lc66uwb0rnsXF7tdft3ExBdkJik6LAa"
+                alt=""><br><br>
+            <div>100% HANDPICKED</div>
+        </div>
+
+        <div class="exchange_icons">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScEyVI4gDhOVv62XgCYGYnZImfcezYA1huL35dY6yZARjpV6-2"
+                alt=""><br><br>
+            <div>ASSURED QUALITY</div>
+        </div>
+
+    </div>
+    <hr>
+
+
+
+    <!-- FOOTER CONTENT -->
+    <footer style="background-color:grey; margin-top: 1%;  ">
+        <div id="footer-row">
+            <div>
+                <h3>MON AMOUR</h3>
+                <ul>
+
+                    <li>Who we are</li>
+                    <li>Join Our Team</li>
+                    <li>Terms And Conditions</li>
+                    <li>We Respect Your Privacy</li>
+                    <li>Returns And Refund Policy</li>
+
+                </ul>
+            </div>
+
+            <div>
+                <h3>Help</h3>
+                <ul>
+
+                    <li>Track Your Order </li>
+                    <li>Frequently Asked Quest</li>
+                    <li>Returns</li>
+                    <li>Cancellations</li>
+                    <li>Payments</li>
+                    <li>CustomerCare</li>
+                    <li>How Do I Redeem My Coupon</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3>Shop by</h3>
+                <ul>
+
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Indie Stores</li>
+                    <li>New Arrivals</li>
+                    <li>Brand Directory</li>
+                    <li>HomeCollections</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3>Follow us</h3>
+                <ul>
+
+                    <li>Facebook</li>
+                    <li>Instagram-MONlife</li>
+                    <li>Instagram- MONLUXE</li>
+                    <li>Twitter
+                    </li>
+                    <li>Pinterest
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+      
+    </footer>
+
+    <!-- <hr /> -->
+
+
+
+</body>
+
+</html>
+
+
+<script>
+
+    var finalcart = JSON.parse(localStorage.getItem("Allcartproduct"));
+
+    finalcart.map(function (item) {
+
+        var product_main_container = document.createElement("div");
+
+        var product_left_container = document.createElement("div");
+
+        var detail_left = document.createElement("div");
+
+        var product_image = document.createElement("img");
+        product_image.setAttribute("src", item.imageURL);
+
+        var price1 = document.createElement("h3");
+        price1.textContent = "Rs." + " " + item.price;
+
+        var product1 = document.createElement("h4");
+        product1.textContent = item.product;
+
+
+        document.querySelector(".detail_left").append(product_image, product1, price1);
+        document.querySelector(".product_left_container").append(detail_left);
+        document.querySelector("#product_main_container").append(product_left_container);
+
+    })
+
+
+
+    var finalprice = finalcart.reduce(function (acc, cv) {
+        var x = Number(cv.price);
+        return acc + x;
+    }, 0);
+
+
+    var bagtotal = document.createElement("p");
+    bagtotal.textContent = "₹" + finalprice;
+
+    var totalamount = document.createElement("p");
+    totalamount.textContent = "₹" + finalprice;
+
+    document.querySelector(".bag_total_price").append(bagtotal);
+    document.querySelector(".totalamount").append(totalamount);
+
+
+</script>

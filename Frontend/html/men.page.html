@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>men</title>
+    <link rel="stylesheet" href="../css/men.page.css" />
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!-- For Sidebar -->
+   
+</head>
+
+<body>
+    <!-- -----------------------------------------------------navbar------------------------------------------------------- -->
+    <nav id="navbar" style="height: 85px;">
+
+        <!-- nav left part - logo -->
+        <div id="logo">
+            <img id="img-logo" src="../images/Mon Amour edit.png" alt="logo">
+        </div>
+
+        <!-- nav right upper part -->
+        <div id="upper">
+            <div id="login-sign">
+                <!-- nav-up - nav upper para -->
+                <a href="login.html">
+                    <p class="nav-up">Sign In / Join Mon Amour</p>
+                </a>
+
+                <a href="cust-care.html">
+                    <p class="nav-up">Customer Care</p>
+                </a>
+
+                <button id="luxe">Visit MONLUXE</button>
+            </div>
+
+            <!-- nav bar lower part -->
+
+            <div id="lower">
+                <p class="nav-text">MEN </p>
+                <p class="nav-text">WOMEN</p>
+                <p class="nav-text">KIDS</p>
+                <p class="nav-text">INDIE</p>
+                <p class="nav-text">HOME AND KITCHEN</p>
+                <input id="nav-inp" type="text" placeholder="Search Mon">
+                <img id="bar" src="../images/heart-solid.svg" alt="">
+                <img id="bar" src="../images/bag-shopping-solid.svg" alt="">
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- --------------------------------------------navbar ends here------------------------------------------- -->
+
+
+    <div id="naz-content-container">
+        <!-- Sidebar -->
+        <div id="naz-sidebar">
+            <div id="naz-sidebar">
+                <div id="mobile-filter">
+                    <div>
+                        <h4 id="burgundy">Refine By</h4>
+                    </div>
+                    <div class="py-1 border-bottom ml-3">
+                        <h6 class="font-weight-bold">Gender</h6>
+                        <div id="orange"><span class="fa fa-minus"></span></div>
+                        <form>
+                            <div class="form-group">
+                                <input type="checkbox" id="menFilter" />
+                                <label for="menFilter">Men Styles</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="womenFilter" />
+                                <label for="womenFilter">Women Styles</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="kidsFilter" />
+                                <label for="kidsFilter">Kids Styles</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="py-2 border-bottom ml-3">
+                    <h6 class="font-weight-bold">Category</h6>
+                    <div id="orange"><span class="fa fa-minus"></span></div>
+                    <form>
+                        <div class="form-group">
+                            <input type="checkbox" id="shirtFilter" />
+                            <label for="shirtFilter">Shirts</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="tshirtFilter" />
+                            <label for="tshirtFilter">T-Shirts</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="jacketFilter" />
+                            <label for="jacketFilter">Jackets</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="trouserFilter" />
+                            <label for="trouserFilter">Trousers</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="shortsFilter" />
+                            <label for="shortsFilter">Shorts</label>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <input type="checkbox" id="menkurta" />
+                            <label for="menkurtafilter">Men's Kurta</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="jeans" />
+                            <label for="jeansfilter">Men's Jeans</label>
+                        </div>
+                    </form>
+                </div>
+                <button id="filterButton">Filter</button>
+            </div>
+        </div>
+
+        <!-- Product Container -->
+        <div id="product-container"></div>
+
+        <!-- Sort By Price -->
+        <div id="naz-sort-products">
+            <span id="naz-sort-text">SORT BY</span>
+            <select name="sort" id="sort-products-option">
+                <option value="Relevence">Relevence</option>
+                <option value="Discount">Discount</option>
+                <option value="hightolow">Price (highest first)</option>
+                <option value="lowtohigh">Price (lowest first)</option>
+            </select>
+            <!-- Sort By Price Ends -->
+        </div>
+    </div>
+
+    <!-- -------------------------------------footer----------------------------------- -->
+
+    <footer >
+        <div id="footer-row">
+            <div>
+                <h3>Mon Amour</h3>
+                <ul>
+
+                    <li>Who we are</li>
+                    <li>Join Our Team</li>
+                    <li>Terms And Conditions</li>
+                    <li>We Respect Your Privacy</li>
+                    <li>Returns And Refund Policy</li>
+
+                </ul>
+            </div>
+
+            <div>
+                <h3>Help</h3>
+                <ul>
+
+                    <li>Track Your Order </li>
+                    <li>Frequently Asked Quest</li>
+                    <li>Returns</li>
+                    <li>Cancellations</li>
+                    <li>Payments</li>
+                    <li>CustomerCare</li>
+                    <li>How Do I Redeem My Coupon</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3>Shop by</h3>
+                <ul>
+
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Indie Stores</li>
+                    <li>New Arrivals</li>
+                    <li>Brand Directory</li>
+                    <li>HomeCollections</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <h3>Follow us</h3>
+                <ul>
+
+                    <li>Facebook</li>
+                    <li>Instagram-MONlife</li>
+                    <li>Instagram- MONLUXE</li>
+                    <li>Twitter
+                    </li>
+                    <li>Pinterest
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <h4 style="text-align: center; color: grey;">
+            ____________________________________________________________________________________________________________________________
+        </h4>
+        <div class="payment" style="display: flex; justify-content: space-around;color: grey;">
+            <div>
+                <h4>Payments Method</h4>
+                <span>Net Banking </span> <span>Verified by VSA </span><span>Secure System </span> <span>Cash on
+                    Delivery </span>
+            </div>
+
+            <div>
+                <h4>Secure Systems</h4>
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+
+<script src="../script/men.page.js"></script>
+
+<!-- <script>
+    let maleproducts = []
+    let url = "http://localhost:4000/male"
+    fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+            maleproducts = data
+            console.log(data);
+            displayproduct(data)
+
+        });
+
+    function displayproduct(data) {
+        let parent = document.getElementById("product-container");
+        parent.innerHTML = "";
+        data.map((elem) => {
+            let product = document.createElement("div")
+            product.setAttribute("class", "malediv");
+
+            let photo = document.createElement("img");
+            photo.setAttribute("class", "product-img");
+            photo.setAttribute("src", elem.imageURL);
+
+            let brand = document.createElement("p")
+            brand.setAttribute("class", "product-brand");
+            brand.innerHTML = elem.brand;
+
+            let title = document.createElement("p")
+            title.setAttribute("class", "product-title");
+            title.innerHTML = elem.product;
+
+            let price_container = document.createElement("div")
+            price_container.setAttribute("class", "price-container");
+
+
+            let price = document.createElement("p")
+            price.setAttribute("class", "price");
+            price.innerHTML = `₹${elem.price}`;
+
+            let striked = document.createElement("p")
+            striked.setAttribute("class", "striked-price");
+            striked.innerHTML = `₹${elem.strikedOffPrice}`;
+
+
+            let offer = document.createElement("p")
+            offer.setAttribute("class", "offer");
+            let offerValue = Math.floor(
+                ((elem.strikedOffPrice - elem.price) / elem.strikedOffPrice) * 100
+            );
+            offer.innerHTML = `(${offerValue}% off)`;
+
+           
+
+            price_container.append(price, striked, offer)
+            product.append(photo, brand, title, price_container)
+            parent.append(product);
+
+
+
+            photo.addEventListener("click", function () {
+                addToCart(elem);
+            });
+        })
+
+
+    }
+
+
+    var x = JSON.parse(localStorage.getItem("prernacart"));
+    if (x == null) {
+       cartarr= [];
+    } else {
+        var cartarr = JSON.parse(localStorage.getItem("prernacart"));
+    }
+
+    // On Click function
+    function addToCart(item) {
+        if (cartarr.length == 1) {
+            cartarr.pop();
+        }
+        cartarr.push(item);
+
+        localStorage.setItem("prernacart", JSON.stringify(cartarr));
+
+        window.location.href = "clicked.html";
+    }
+
+
+
+    let sort = document.getElementById("sort-products-option")
+    console.log(sort);
+    sort.addEventListener("change", SORT)
+    function SORT() {
+        let sorting = document.getElementById("sort-products-option").value
+        console.log(sorting);
+        if (sorting == "Discount") {
+            window.location.reload()
+        } else if (sorting == "lowtohigh") {
+            maleproducts.sort((a, b) => a.price - b.price)
+            displayproduct(maleproducts)
+        } else if (sorting == "hightolow") {
+            maleproducts.sort((a, b) => b.price - a.price)
+            displayproduct(maleproducts)
+        }
+
+    }
+    // ------------------------------------------------------filter-------------------------------------------------------------------------------------------------------------------------
+    function filterProducts() {
+        // Filtering Based On Gender
+        let menFilter = document.getElementById("menFilter");
+        let womenFilter = document.getElementById("womenFilter");
+        let kidFilter = document.getElementById("kidsFilter");
+
+        if (menFilter.checked == true) window.location.href = "./men.page.html";
+
+        if (womenFilter.checked == true) window.location.href = "./women.page.html";
+
+        if (kidFilter.checked == true) window.location.href = "./kidsStyles.html";
+
+        // Filtering based on Categories
+        let queryURL = "http://localhost:4000/filter?items=[";
+        let filterQuery = [];
+        let shirtFilter = document.getElementById("shirtFilter");
+        let tshirtFilter = document.getElementById("tshirtFilter");
+        let jacketFilter = document.getElementById("jacketFilter");
+        let trouserFilter = document.getElementById("trouserFilter");
+        let shortsFilter = document.getElementById("shortsFilter");
+        let menkurtas = document.getElementById("menkurta");
+        let jeans = document.getElementById("jeans")
+
+
+        if (shirtFilter.checked == true) filterQuery.push("shirts");
+        if (tshirtFilter.checked == true) filterQuery.push("T-shirts");
+        if (jacketFilter.checked == true) filterQuery.push("jackets");
+        if (trouserFilter.checked == true) filterQuery.push("pants");
+        if (shortsFilter.checked == true) filterQuery.push("shorts");
+        if (menkurtas.checked == true) filterQuery.push("kurtas");
+        if (jeans.checked == true) filterQuery.push("jeans");
+
+
+        filterQuery.map((elem) => {
+            queryURL = queryURL + elem + ",";
+        });
+        queryURL = queryURL.slice(0, -1);
+        queryURL += "]";
+
+        filteredData(queryURL);
+    }
+
+    async function filteredData(queryURL) {
+        let res = await fetch(queryURL);
+        let data = await res.json();
+        data = data.products;
+        console.log(data);
+        displayproduct(data);
+    }
+
+    let button = document
+        .getElementById("filterButton")
+        .addEventListener("click", filterProducts);
+
+
+</script> -->
