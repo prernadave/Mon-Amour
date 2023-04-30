@@ -1,8 +1,7 @@
 const mongoose = require("mongoose")
 mongoose.set("strictQuery", true)
-
-const connection = mongoose.connect("mongodb+srv://prerna_dave:prernadave@cluster0.1el1sjr.mongodb.net/monamour?retryWrites=true&w=majority")
-
+require('dotenv').config()
+const connection = mongoose.connect(process.env.url)
 const productSchema = mongoose.Schema({
 
   imageURL: { type: String, required: true },
@@ -18,13 +17,7 @@ const productSchema = mongoose.Schema({
     timestamps: true,
   }
 );
-
-
-
 const ProductModel = mongoose.model("product", productSchema);
-
-
-
 
 module.exports = {
   connection,
