@@ -9,7 +9,7 @@ else {
 
 
 
-var cartItemArr = JSON.parse(localStorage.getItem("prernacart"));
+var cartItemArr = JSON.parse(localStorage.getItem("prernacart"))
 
 cartItemArr.map(function (item) {
   document
@@ -39,7 +39,7 @@ cartItemArr.map(function (item) {
   price1.textContent = "₹" + item.price;
 
   var strikedOffPrice1 = document.createElement("h4");
-strikedOffPrice1.setAttribute("class", "striked")
+  strikedOffPrice1.setAttribute("class", "striked")
   strikedOffPrice1.textContent = "MRP" + " " + "₹" + item.strikedOffPrice;
 
   var priceincl = document.createElement("h5");
@@ -52,13 +52,22 @@ strikedOffPrice1.setAttribute("class", "striked")
 
 
 
-
-  document.querySelector(".btn1").addEventListener("click", function () {
-    alert("Added to cart");
-    addToCart(item);
-    window.location.href = "cart.html";
-  });
+  
+    document.querySelector(".btn1").addEventListener("click", function () {
+      
+      if (!localStorage.getItem('Token')) {
+        alert('Please Login First');
+        window.location.href = "login.html";
+      }else{
+      addToCart(item);
+      alert("Added to cart");
+      window.location.href = "cart.html";
+      }
+    });
+  
 });
+
+
 
 
 function addToCart(item) {

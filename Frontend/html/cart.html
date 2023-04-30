@@ -14,10 +14,8 @@
 
 
     <style>
-      
-
         #product_main_container {
-           
+
             display: flex;
             width: 80%;
             font-family: sans-serif;
@@ -25,7 +23,7 @@
         }
 
         .detail_left {
-           
+
             width: 100%;
         }
 
@@ -132,7 +130,7 @@
         }
 
 
-      
+
 
 
         .product_left_container {
@@ -181,7 +179,7 @@
                 <p class="nav-text">INDIE</p>
                 <p class="nav-text">HOME AND KITCHEN</p>
                 <input id="nav-inp" type="text" placeholder="Search Mon">
-                
+
                 <img id="bar" src="../images/heart-solid.svg" alt="">
                 <img id="bar" src="../images/bag-shopping-solid.svg" alt="">
 
@@ -189,7 +187,7 @@
         </div>
     </nav>
 
-    
+
     <h2 style="text-align: center; margin-bottom: 3%;">My Bag</h2>
 
 
@@ -198,7 +196,7 @@
         <div class="product_left_container">
 
             <div class="detail_left">
-                
+
             </div>
 
         </div>
@@ -317,7 +315,7 @@
             </div>
         </div>
 
-      
+
     </footer>
 
     <!-- <hr /> -->
@@ -333,7 +331,7 @@
 
     var finalcart = JSON.parse(localStorage.getItem("Allcartproduct"));
 
-    finalcart.map(function (item) {
+    finalcart.map(function (item, index) {
 
         var product_main_container = document.createElement("div");
 
@@ -350,8 +348,18 @@
         var product1 = document.createElement("h4");
         product1.textContent = item.product;
 
+        var removeBtn = document.createElement("button")
+        removeBtn.textContent = "Remove Product"
+        removeBtn.setAttribute('class', 'btn btn-remove');
+        removeBtn.addEventListener('click', () => {
+            finalcart.splice(index, 1); // remove the item from the finalcart array
+            localStorage.setItem('Allcartproduct', JSON.stringify(finalcart)); // update the cart in local storage
+            location.reload();
 
-        document.querySelector(".detail_left").append(product_image, product1, price1);
+        })
+
+
+        document.querySelector(".detail_left").append(product_image, product1, price1, removeBtn);
         document.querySelector(".product_left_container").append(detail_left);
         document.querySelector("#product_main_container").append(product_left_container);
 
@@ -373,6 +381,9 @@
 
     document.querySelector(".bag_total_price").append(bagtotal);
     document.querySelector(".totalamount").append(totalamount);
+
+
+    console.log(finalcart.length);
 
 
 </script>

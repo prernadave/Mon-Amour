@@ -1,4 +1,18 @@
 
+let cart = document.querySelector('.cart')
+cart.addEventListener('click', () => {
+    if (localStorage.getItem('Token')) {
+        window.location.href = "cart.html"
+    } else {
+        alert('Please Login First or Create a new account!')
+        window.location.href = 'login.html'
+    }
+})
+let user = localStorage.getItem('Name')
+let userName = document.querySelector('.username')
+userName.innerHTML =    `Hello,${user}`
+console.log(userName);
+
 
 var img = document.getElementById('img');
 
@@ -39,29 +53,29 @@ setInterval(slider1, 3000);
 var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+var x = setInterval(function () {
 
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (50000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("time").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("time").innerHTML = "EXPIRED";
-  }
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (50000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("time").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("time").innerHTML = "EXPIRED";
+    }
 }, 1000);
 
 // ------------------------------------------third slider-------------------------------------------------
@@ -85,10 +99,10 @@ setInterval(slider2, 3000);
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-var img3= document.getElementById('img3')
-var slides3 = ["https://assets.ajio.com/cms/AJIO/WEB/18012023-UHP-D-DailyBanner-P1-BestOfInternationalBrands-FCUKTrendyol-Upto60.jpg", "https://assets.ajio.com/cms/AJIO/WEB/18012023-UHP-D-DailyBanner-P2-Cultsport-Min60.jpg","https://assets.ajio.com/cms/AJIO/WEB/18012023-UHP-D-DailyBanner-P3-WinterIsComing-BullmerBelleFille-Starting299Extra30.jpg", "https://assets.ajio.com/cms/AJIO/WEB/18012023-UHP-D-DailyBanner-P4-MnS-Upto40Extra35.jpg", "https://assets.ajio.com/cms/AJIO/WEB/18012023-UHP-D-DailyBanner-P5-GAP-20Offon2.jpg"]
-var start3=0
-function slider3(){
+var img3 = document.getElementById('img3')
+var slides3 = ["https://assets.ajio.com/cms/AJIO/WEB/18012023-UHP-D-DailyBanner-P1-BestOfInternationalBrands-FCUKTrendyol-Upto60.jpg", "https://assets.ajio.com/cms/AJIO/WEB/18012023-UHP-D-DailyBanner-P2-Cultsport-Min60.jpg", "https://assets.ajio.com/cms/AJIO/WEB/18012023-UHP-D-DailyBanner-P3-WinterIsComing-BullmerBelleFille-Starting299Extra30.jpg", "https://assets.ajio.com/cms/AJIO/WEB/18012023-UHP-D-DailyBanner-P4-MnS-Upto40Extra35.jpg", "https://assets.ajio.com/cms/AJIO/WEB/18012023-UHP-D-DailyBanner-P5-GAP-20Offon2.jpg"]
+var start3 = 0
+function slider3() {
     if (start3 < slides3.length) {
         start3 = start3 + 1;
     }
@@ -108,14 +122,14 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-  });
+});
 
 
 

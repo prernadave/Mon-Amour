@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css">
     <title>Login</title>
-    
+
 </head>
 
 <body>
@@ -59,7 +59,7 @@
     </nav>
 
 
-<!-- ----------------------------------------login form--------------------------------------------------------------- -->
+    <!-- ----------------------------------------login form--------------------------------------------------------------- -->
     <div>
         <form id="login" class="bg-text" action="">
             <label for="">Email</label><br>
@@ -70,7 +70,7 @@
         </form>
     </div>
 
- <!-- ------------------------------------------------------footer------------------------------------------------- -->
+    <!-- ------------------------------------------------------footer------------------------------------------------- -->
 
 
     <footer style="background-color:#F1ECCC; margin-top: 35%;">
@@ -186,11 +186,15 @@
             }).then((data) => {
                 console.log(data);
                 localStorage.setItem('Token', data.token)
-                alert(`successfully logged in`)
+                localStorage.setItem('Name', data.name)
+
+
+                alert(`Welcome again ${data.name}`)
                 window.location.href = 'index.html'
+               
             }).catch((error) => {
-                console.log({ 'error': error });
-            })
+                    console.log({ 'error': error });
+                })
         })
     }
 
