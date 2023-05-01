@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="../css/men.page.css" />
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- For Sidebar -->
-   
+
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 
         <!-- nav left part - logo -->
         <div id="logo">
-            <img id="img-logo" src="../images/Mon Amour edit.png" alt="logo">
+            <a href="./index.html"><img id="img-logo" src="../images/Mon Amour edit.png" alt="logo"></a>
         </div>
 
         <!-- nav right upper part -->
@@ -41,8 +41,12 @@
             <!-- nav bar lower part -->
 
             <div id="lower">
-                <p class="nav-text">MEN </p>
-                <p class="nav-text">WOMEN</p>
+                <a href="../html/men.page.html">
+                    <p class="nav-text">MEN </p>
+                </a>
+                <a href="../html/women.page.html">
+                    <p class="nav-text">WOMEN</p>
+                </a>
                 <p class="nav-text">KIDS</p>
                 <p class="nav-text">INDIE</p>
                 <p class="nav-text">HOME AND KITCHEN</p>
@@ -55,75 +59,79 @@
     </nav>
 
     <!-- --------------------------------------------navbar ends here------------------------------------------- -->
-
+    <h1 class="title">Everything on sale</h1>
 
     <div id="naz-content-container">
+
+
         <!-- Sidebar -->
         <div id="naz-sidebar">
-            <div id="naz-sidebar">
-                <div id="mobile-filter">
-                    <div>
-                        <h4 id="burgundy">Refine By</h4>
-                    </div>
-                    <div class="py-1 border-bottom ml-3">
-                        <h6 class="font-weight-bold">Gender</h6>
-                        <div id="orange"><span class="fa fa-minus"></span></div>
-                        <form>
-                            <div class="form-group">
-                                <input type="checkbox" id="menFilter" />
-                                <label for="menFilter">Men Styles</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" id="womenFilter" />
-                                <label for="womenFilter">Women Styles</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" id="kidsFilter" />
-                                <label for="kidsFilter">Kids Styles</label>
-                            </div>
-                        </form>
-                    </div>
+
+            <div id="mobile-filter">
+                <div>
+                    <h4 id="burgundy">Refine By</h4>
                 </div>
-                <div class="py-2 border-bottom ml-3">
-                    <h6 class="font-weight-bold">Category</h6>
-                    <div id="orange"><span class="fa fa-minus"></span></div>
-                    <form>
-                        <div class="form-group">
-                            <input type="checkbox" id="shirtFilter" />
-                            <label for="shirtFilter">Shirts</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" id="tshirtFilter" />
-                            <label for="tshirtFilter">T-Shirts</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" id="jacketFilter" />
-                            <label for="jacketFilter">Jackets</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" id="trouserFilter" />
-                            <label for="trouserFilter">Trousers</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="checkbox" id="shortsFilter" />
-                            <label for="shortsFilter">Shorts</label>
-                        </div>
-
-
+                <div class="py-1 border-bottom ml-3">
+                    <h6 class="font-weight-bold"><span><i class="fas fa-minus"></i></span> Gender</h6>
+                    <form class="gender">
 
                         <div class="form-group">
-                            <input type="checkbox" id="menkurta" />
-                            <label for="menkurtafilter">Men's Kurta</label>
+                            <input type="checkbox" id="womenFilter" />
+                            <label for="womenFilter">Women</label>
                         </div>
                         <div class="form-group">
-                            <input type="checkbox" id="jeans" />
-                            <label for="jeansfilter">Men's Jeans</label>
+                            <input type="checkbox" id="menFilter" />
+                            <label for="menFilter">Men</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="kidsFilter" />
+                            <label for="kidsFilter">Kids</label>
                         </div>
                     </form>
                 </div>
-                <button id="filterButton">Filter</button>
             </div>
+            <div class="py-2 border-bottom ml-3">
+                <h6 class="font-weight-bold"><span class="fa fa-minus"></span> Category</h6>
+
+                <form>
+                    <div class="form-group">
+                        <input type="checkbox" id="shirtFilter" />
+                        <label for="shirtFilter">Shirts</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="tshirtFilter" />
+                        <label for="tshirtFilter">T-Shirts</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="jacketFilter" />
+                        <label for="jacketFilter">Jackets</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="trouserFilter" />
+                        <label for="trouserFilter">Trousers</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="shortsFilter" />
+                        <label for="shortsFilter">Shorts</label>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <input type="checkbox" id="menkurta" />
+                        <label for="menkurtafilter">Men's Kurta</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="jeans" />
+                        <label for="jeansfilter">Men's Jeans</label>
+                    </div>
+                </form>
+            </div>
+            <button id="filterButton">Filter</button>
+
         </div>
+
+
 
         <!-- Product Container -->
         <div id="product-container"></div>
@@ -139,11 +147,12 @@
             </select>
             <!-- Sort By Price Ends -->
         </div>
+
     </div>
 
     <!-- -------------------------------------footer----------------------------------- -->
 
-    <footer >
+    <footer>
         <div id="footer-row">
             <div>
                 <h3>Mon Amour</h3>

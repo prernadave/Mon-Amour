@@ -1,3 +1,6 @@
+#container {
+    margin-top: 7%;
+}
 
 .timewatch {
     text-align: center;
@@ -47,10 +50,11 @@
     line-height: 140%;
 }
 
-li{text-decoration: none;
+li {
+    text-decoration: none;
     list-style: none;
     font-family: sans-serif;
-    }
+}
 
 
 h3 {

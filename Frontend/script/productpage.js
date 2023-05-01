@@ -64,9 +64,12 @@ cartItemArr.map(function (item) {
       window.location.href = "cart.html";
       }
     });
+
+
+
   
 });
-
+console.log(ArrOfAllCartproduct.length)
 
 
 
