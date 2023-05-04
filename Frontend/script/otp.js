@@ -14,3 +14,10 @@ function submitOTP(event){
         alert("Wrong OTP!")
     }
 }
+
+let cart = document.querySelector('.cart')
+  cart.addEventListener('click', () => {
+
+    window.location.href = "cart.html"
+
+  })

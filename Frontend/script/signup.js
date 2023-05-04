@@ -1,4 +1,12 @@
-
+let carts = document.querySelector('.cart')
+carts.addEventListener('click', () => {
+    if (localStorage.getItem('Token')) {
+        window.location.href = "cart.html"
+    } else {
+        alert('Please Login First or Create a new account!')
+        window.location.href = 'login.html'
+    }
+})
 const registeration_form = document.querySelector("form")
 
 registeration_form.addEventListener("submit", (event) => {
@@ -17,7 +25,7 @@ registeration_form.addEventListener("submit", (event) => {
     }
 
     console.log(object);
-    fetch("http://localhost:4000/register", {
+    fetch("https://faithful-elk-sweatsuit.cyclic.app/register", {
         method: 'POST',
         headers: {
             "Content-Type": "application/json"
@@ -33,5 +41,11 @@ registeration_form.addEventListener("submit", (event) => {
         console.log({ "error": error });
     })
 
-})
+});
 
+let cart = document.querySelector('.cart')
+cart.addEventListener('click', () => {
+
+    window.location.href = "cart.html"
+
+});

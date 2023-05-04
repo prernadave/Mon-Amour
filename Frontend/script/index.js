@@ -9,9 +9,13 @@ cart.addEventListener('click', () => {
     }
 })
 let user = localStorage.getItem('Name')
+if(user){
 let userName = document.querySelector('.username')
 userName.innerHTML = `Hello,${user}`
 console.log(userName);
+}else{
+    userName.innerHTML=`Hello,howdy`
+}
 
 
 var img = document.getElementById('img');

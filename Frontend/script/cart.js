@@ -3,9 +3,9 @@ const emptyCartMessage = document.getElementById('empty-cart-message');
 var finalcart = JSON.parse(localStorage.getItem("Allcartproduct"));
 if (finalcart.length === 0) {
     // Hide cart items and show empty cart message
-    
+
     emptyCartMessage.style.display = 'block';
-   
+
 } else {
     // Show cart items and hide empty cart message
     document.querySelector(".product_left_container").style.display = 'block';
@@ -73,4 +73,9 @@ document.querySelector(".totalamount").append(totalamount);
 
 console.log(finalcart.length);
 
+let cart = document.querySelector('.cart')
+cart.addEventListener('click', () => {
 
+    window.location.href = "cart.html"
+
+})

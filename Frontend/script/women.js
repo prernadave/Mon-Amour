@@ -1,5 +1,15 @@
+let carts = document.querySelector('.cart')
+carts.addEventListener('click', () => {
+    if (localStorage.getItem('Token')) {
+        window.location.href = "cart.html"
+    } else {
+        alert('Please Login First or Create a new account!')
+        window.location.href = 'login.html'
+    }
+})
+
 let maleproducts = []
-let url = "http://localhost:4000/female"
+let url = "https://faithful-elk-sweatsuit.cyclic.app/female"
 fetch(url)
     .then((res) => res.json())
     .then((data) => {
@@ -62,23 +72,23 @@ function displayproduct(data) {
 }
 
 var x = JSON.parse(localStorage.getItem("prernacart"));
-    if (x == null) {
-       cartarr= [];
-    } else {
-        var cartarr = JSON.parse(localStorage.getItem("prernacart"));
+if (x == null) {
+    cartarr = [];
+} else {
+    var cartarr = JSON.parse(localStorage.getItem("prernacart"));
+}
+
+// On Click function
+function addToCart(item) {
+    if (cartarr.length == 1) {
+        cartarr.pop();
     }
+    cartarr.push(item);
 
-    // On Click function
-    function addToCart(item) {
-        if (cartarr.length == 1) {
-            cartarr.pop();
-        }
-        cartarr.push(item);
+    localStorage.setItem("prernacart", JSON.stringify(cartarr));
 
-        localStorage.setItem("prernacart", JSON.stringify(cartarr));
-
-        window.location.href = "clicked.html";
-    }
+    window.location.href = "clicked.html";
+}
 
 
 
@@ -114,7 +124,7 @@ function filterProducts() {
     if (kidFilter.checked == true) window.location.href = "./kidsStyles.html";
 
     // Filtering based on Categories
-    let queryURL = "http://localhost:4000/filter?items=[";
+    let queryURL = "https://faithful-elk-sweatsuit.cyclic.app/filter?items=[";
     let filterQuery = [];
     let shirtFilter = document.getElementById("shirtFilter");
     let tshirtFilter = document.getElementById("tshirtFilter");
@@ -124,7 +134,7 @@ function filterProducts() {
     let topsFilter = document.getElementById("topsFilter");
     let kurtasFilter = document.getElementById("kurtasFilter");
     let sareeFilter = document.getElementById("sareeFilter");
-    
+
     let jeans = document.getElementById("jeans")
 
 
@@ -136,7 +146,7 @@ function filterProducts() {
     if (topsFilter.checked == true) filterQuery.push("top");
     if (kurtasFilter.checked == true) filterQuery.push("kurta");
     if (sareeFilter.checked == true) filterQuery.push("saree");
-    
+
 
 
     filterQuery.map((elem) => {
@@ -159,3 +169,11 @@ async function filteredData(queryURL) {
 let button = document
     .getElementById("filterButton")
     .addEventListener("click", filterProducts);
+
+
+let cart = document.querySelector('.cart')
+cart.addEventListener('click', () => {
+
+    window.location.href = "cart.html"
+
+})

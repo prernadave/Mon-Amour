@@ -13,3 +13,10 @@ document.querySelector("form").addEventListener("submit", fnLogin);
       alert("Details incorrect!");
     }
   }
+
+  let cart = document.querySelector('.cart')
+  cart.addEventListener('click', () => {
+
+    window.location.href = "cart.html"
+
+  })

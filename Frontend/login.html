@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="./css/login.css">
     <title>Login</title>
+    <link rel="shortcut icon" href="./images/Mon Amour-1.png" type="image/x-icon">
 
 </head>
 
@@ -19,7 +20,7 @@
 
         <!-- nav left part - logo -->
         <div id="logo">
-            <a href="./index.html"><img id="img-logo" src="../images/Mon Amour edit.png" alt="logo"></a> 
+            <a href="index.html"><img id="img-logo" src="./images/Mon Amour edit.png" alt="logo"></a>
         </div>
 
         <!-- nav right upper part -->
@@ -40,10 +41,10 @@
             <!-- nav bar lower part -->
 
             <div id="lower">
-                <a href="../html/men.page.html">
+                <a href="men.page.html">
                     <p class="nav-text">MEN </p>
                 </a>
-                <a href="../html/women.page.html">
+                <a href="women.page.html">
                     <p class="nav-text">WOMEN</p>
                 </a>
                 <p class="nav-text">KIDS</p>
@@ -51,8 +52,8 @@
                 <p class="nav-text">HOME AND KITCHEN</p>
                 <input id="nav-inp" type="text" placeholder="Search Mon">
                 <button type="submit" class="submit">Search</button>
-                <img id="bar" src="../images/heart-solid.svg" alt="">
-                <img id="bar" src="../images/bag-shopping-solid.svg" alt="">
+                <img id="bar" src="./images/heart-solid.svg" alt="">
+                <img id="bar" class="cart" src="./images/bag-shopping-solid.svg" alt="">
 
             </div>
         </div>
@@ -162,6 +163,9 @@
 <!-- -----------------------------------------------login----------------------------- -->
 
 <script>
+
+
+
     const just_clicked = () => {
         const login_value = document.getElementById('login')
         login_value.addEventListener("click", async function (e) {
@@ -175,7 +179,7 @@
             }
             console.log(userObject);
 
-            fetch('http://localhost:4000/login', {
+            fetch('https://faithful-elk-sweatsuit.cyclic.app/login', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
@@ -191,12 +195,29 @@
 
                 alert(`Welcome again ${data.name}`)
                 window.location.href = 'index.html'
-               
+
             }).catch((error) => {
-                    console.log({ 'error': error });
-                })
+                console.log({ 'error': error });
+            })
         })
     }
+
+    let cart = document.querySelector('.cart')
+    cart.addEventListener('click', () => {
+
+        window.location.href = "cart.html"
+
+    })
+
+    let carts = document.querySelector('.cart')
+    carts.addEventListener('click', () => {
+        if (localStorage.getItem('Token')) {
+            window.location.href = "cart.html"
+        } else {
+            alert('Please Login First or Create a new account!')
+            window.location.href = 'login.html'
+        }
+    })
 
 
 </script>

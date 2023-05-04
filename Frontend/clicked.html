@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/productpage.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/productpage.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>Product Details</title>
+  <link rel="shortcut icon" href="./images/Mon Amour-1.png" type="image/x-icon">
 
 
 </head>
@@ -22,7 +23,7 @@
 
     <!-- nav left part - logo -->
     <div id="logo">
-      <a href="./index.html"><img id="img-logo" src="../images/Mon Amour edit.png" alt="logo"></a>
+      <a href="index.html"><img id="img-logo" src="./images/Mon Amour edit.png" alt="logo"></a>
     </div>
 
     <!-- nav right upper part -->
@@ -43,14 +44,18 @@
       <!-- nav bar lower part -->
 
       <div id="lower">
-        <p class="nav-text">MEN </p>
-        <p class="nav-text">WOMEN</p>
+        <a href="men.page.html">
+          <p class="nav-text">MEN </p>
+        </a>
+        <a href="women.page.html">
+          <p class="nav-text">WOMEN</p>
+        </a>
         <p class="nav-text">KIDS</p>
         <p class="nav-text">INDIE</p>
         <p class="nav-text">HOME AND KITCHEN</p>
         <input id="nav-inp" type="text" placeholder="Search Mon">
-        <img id="bar" src="../images/heart-solid.svg" alt="">
-        <img id="bar" src="../images/bag-shopping-solid.svg" alt="">
+        <img id="bar" src="./images/heart-solid.svg" alt="">
+        <img id="bar" class="cart" src="./images/bag-shopping-solid.svg" alt="">
 
       </div>
     </div>
@@ -108,12 +113,12 @@
 
         <div class="wish">
           <span><i class="fas fa-heart"></i></span>
-        SAVE TO WISHLIST
+          SAVE TO WISHLIST
         </div>
       </div>
     </div>
 
-    
+
   </div>
 
 
@@ -203,7 +208,12 @@
 </body>
 
 </html>
+<script>let cart = document.querySelector('.cart')
+  cart.addEventListener('click', () => {
 
+    window.location.href = "cart.html"
+
+  })</script>
 <!-- <script>
 
   var CartItemsOftarun = JSON.parse(localStorage.getItem("CartItemsOftarun"));
@@ -277,4 +287,4 @@ function addToCart(item) {
 
 
 
-<script src="../script/productpage.js"></script>
+<script src="./script/productpage.js"></script>

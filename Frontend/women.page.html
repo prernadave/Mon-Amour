@@ -5,13 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>men</title>
-    <link rel="stylesheet" href="../css/men.page.css" />
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Women</title>
+    <link rel="stylesheet" href="./css/women.css" />
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="shortcut icon" href="./images/Mon Amour-1.png" type="image/x-icon">
     <!-- For Sidebar -->
-
+  
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 
         <!-- nav left part - logo -->
         <div id="logo">
-            <a href="./index.html"><img id="img-logo" src="../images/Mon Amour edit.png" alt="logo"></a>
+            <a href="index.html"><img id="img-logo" src="./images/Mon Amour edit.png" alt="logo"></a> 
         </div>
 
         <!-- nav right upper part -->
@@ -41,18 +41,18 @@
             <!-- nav bar lower part -->
 
             <div id="lower">
-                <a href="../html/men.page.html">
+                <a href="men.page.html">
                     <p class="nav-text">MEN </p>
                 </a>
-                <a href="../html/women.page.html">
+                <a href="women.page.html">
                     <p class="nav-text">WOMEN</p>
                 </a>
                 <p class="nav-text">KIDS</p>
                 <p class="nav-text">INDIE</p>
                 <p class="nav-text">HOME AND KITCHEN</p>
                 <input id="nav-inp" type="text" placeholder="Search Mon">
-                <img id="bar" src="../images/heart-solid.svg" alt="">
-                <img id="bar" src="../images/bag-shopping-solid.svg" alt="">
+                <img id="bar" src="./images/heart-solid.svg" alt="">
+                <img id="bar" class="cart" src="./images/bag-shopping-solid.svg" alt="">
 
             </div>
         </div>
@@ -62,45 +62,43 @@
     <h1 class="title">Everything on sale</h1>
 
     <div id="naz-content-container">
-
-
+        <!-- div-1 -->
         <!-- Sidebar -->
         <div id="naz-sidebar">
-
             <div id="mobile-filter">
                 <div>
                     <h4 id="burgundy">Refine By</h4>
                 </div>
                 <div class="py-1 border-bottom ml-3">
-                    <h6 class="font-weight-bold"><span><i class="fas fa-minus"></i></span> Gender</h6>
-                    <form class="gender">
-
-                        <div class="form-group">
-                            <input type="checkbox" id="womenFilter" />
-                            <label for="womenFilter">Women</label>
-                        </div>
+                    <h6 class="font-weight-bold">Gender</h6>
+                    <div id="orange"><span class="fa fa-minus"></span></div>
+                    <form>
                         <div class="form-group">
                             <input type="checkbox" id="menFilter" />
-                            <label for="menFilter">Men</label>
+                            <label for="menFilter">Men Styles</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="womenFilter" />
+                            <label for="womenFilter">Women Styles</label>
                         </div>
                         <div class="form-group">
                             <input type="checkbox" id="kidsFilter" />
-                            <label for="kidsFilter">Kids</label>
+                            <label for="kidsFilter">Kids Styles</label>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="py-2 border-bottom ml-3">
-                <h6 class="font-weight-bold"><span class="fa fa-minus"></span> Category</h6>
-
+                <h6 class="font-weight-bold">Category</h6>
+                <div id="orange"><span class="fa fa-minus"></span></div>
                 <form>
                     <div class="form-group">
                         <input type="checkbox" id="shirtFilter" />
-                        <label for="shirtFilter">Shirts</label>
+                        <label for="shirtFilter">Women's Shirts </label>
                     </div>
                     <div class="form-group">
                         <input type="checkbox" id="tshirtFilter" />
-                        <label for="tshirtFilter">T-Shirts</label>
+                        <label for="tshirtFilter">Women's T-Shirts</label>
                     </div>
                     <div class="form-group">
                         <input type="checkbox" id="jacketFilter" />
@@ -114,28 +112,31 @@
                         <input type="checkbox" id="shortsFilter" />
                         <label for="shortsFilter">Shorts</label>
                     </div>
-
-
-
                     <div class="form-group">
-                        <input type="checkbox" id="menkurta" />
-                        <label for="menkurtafilter">Men's Kurta</label>
+                        <input type="checkbox" id="topsFilter" />
+                        <label for="topsFilter">Tops</label>
                     </div>
                     <div class="form-group">
-                        <input type="checkbox" id="jeans" />
-                        <label for="jeansfilter">Men's Jeans</label>
+                        <input type="checkbox" id="kurtasFilter" />
+                        <label for="kurtasFilter">Kurtas</label>
                     </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="sareeFilter" />
+                        <label for="sareeFilter">Saree</label>
+                    </div>
+                   
                 </form>
             </div>
             <button id="filterButton">Filter</button>
-
         </div>
 
 
 
+        <!-- div-2 -->
         <!-- Product Container -->
         <div id="product-container"></div>
 
+        <!-- div-3 -->
         <!-- Sort By Price -->
         <div id="naz-sort-products">
             <span id="naz-sort-text">SORT BY</span>
@@ -148,14 +149,14 @@
             <!-- Sort By Price Ends -->
         </div>
 
+
+
     </div>
 
-    <!-- -------------------------------------footer----------------------------------- -->
-
-    <footer>
+    <footer >
         <div id="footer-row">
             <div>
-                <h3>Mon Amour</h3>
+                <h3>MON AMOUR</h3>
                 <ul>
 
                     <li>Who we are</li>
@@ -192,7 +193,7 @@
                     <li>Indie Stores</li>
                     <li>New Arrivals</li>
                     <li>Brand Directory</li>
-                    <li>HomeCollections</li>
+                    <li>Home Collections</li>
                 </ul>
             </div>
 
@@ -213,7 +214,7 @@
             </div>
         </div>
 
-        <h4 style="text-align: center; color: grey;">
+        <h4 style="text-align: center; color:grey;">
             ____________________________________________________________________________________________________________________________
         </h4>
         <div class="payment" style="display: flex; justify-content: space-around;color: grey;">
@@ -230,16 +231,13 @@
         </div>
     </footer>
 
-
 </body>
 
 </html>
-
-<script src="../script/men.page.js"></script>
-
+<script src="./script/women.js"></script>
 <!-- <script>
     let maleproducts = []
-    let url = "http://localhost:4000/male"
+    let url = "http://localhost:4000/female"
     fetch(url)
         .then((res) => res.json())
         .then((data) => {
@@ -254,7 +252,7 @@
         parent.innerHTML = "";
         data.map((elem) => {
             let product = document.createElement("div")
-            product.setAttribute("class", "malediv");
+            product.setAttribute("class", "femalediv");
 
             let photo = document.createElement("img");
             photo.setAttribute("class", "product-img");
@@ -288,44 +286,21 @@
             );
             offer.innerHTML = `(${offerValue}% off)`;
 
-           
-
             price_container.append(price, striked, offer)
             product.append(photo, brand, title, price_container)
             parent.append(product);
 
+            // photo.addEventListener("click", function () {
+            //     addToCart(elem);
+            // });
+        });
 
-
-            photo.addEventListener("click", function () {
-                addToCart(elem);
-            });
-        })
 
 
     }
 
 
-    var x = JSON.parse(localStorage.getItem("prernacart"));
-    if (x == null) {
-       cartarr= [];
-    } else {
-        var cartarr = JSON.parse(localStorage.getItem("prernacart"));
-    }
-
-    // On Click function
-    function addToCart(item) {
-        if (cartarr.length == 1) {
-            cartarr.pop();
-        }
-        cartarr.push(item);
-
-        localStorage.setItem("prernacart", JSON.stringify(cartarr));
-
-        window.location.href = "clicked.html";
-    }
-
-
-
+    // sort-products-option
     let sort = document.getElementById("sort-products-option")
     console.log(sort);
     sort.addEventListener("change", SORT)
@@ -343,7 +318,7 @@
         }
 
     }
-    // ------------------------------------------------------filter-------------------------------------------------------------------------------------------------------------------------
+
     function filterProducts() {
         // Filtering Based On Gender
         let menFilter = document.getElementById("menFilter");
@@ -364,7 +339,10 @@
         let jacketFilter = document.getElementById("jacketFilter");
         let trouserFilter = document.getElementById("trouserFilter");
         let shortsFilter = document.getElementById("shortsFilter");
-        let menkurtas = document.getElementById("menkurta");
+        let topsFilter = document.getElementById("topsFilter");
+        let kurtasFilter = document.getElementById("kurtasFilter");
+        let sareeFilter = document.getElementById("sareeFilter");
+        
         let jeans = document.getElementById("jeans")
 
 
@@ -373,8 +351,10 @@
         if (jacketFilter.checked == true) filterQuery.push("jackets");
         if (trouserFilter.checked == true) filterQuery.push("pants");
         if (shortsFilter.checked == true) filterQuery.push("shorts");
-        if (menkurtas.checked == true) filterQuery.push("kurtas");
-        if (jeans.checked == true) filterQuery.push("jeans");
+        if (topsFilter.checked == true) filterQuery.push("top");
+        if (kurtasFilter.checked == true) filterQuery.push("kurta");
+        if (sareeFilter.checked == true) filterQuery.push("saree");
+        
 
 
         filterQuery.map((elem) => {

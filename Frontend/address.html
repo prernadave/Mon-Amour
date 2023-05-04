@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/278cf368e0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/fontawesome-free-5.12.1-web/css/all.css" />
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/address.css">
+  <link rel="shortcut icon" href="./images/Mon Amour-1.png" type="image/x-icon">
+
+  <title>Enter Address</title>
+</head>
+
+
+
+<body>
+  <nav id="navbar" style="height: 85px;">
+
+    <!-- nav left part - logo -->
+    <div id="logo">
+      <a href="index.html"><img id="img-logo" src="./images/Mon Amour edit.png" alt="logo"></a>
+    </div>
+
+    <!-- nav right upper part -->
+    <div id="upper">
+      <div id="login-sign">
+        <!-- nav-up - nav upper para -->
+        <a href="login.html">
+          <p class="nav-up">Sign In / Join Mon Amour</p>
+        </a>
+
+        <a href="cust-care.html">
+          <p class="nav-up">Customer Care</p>
+        </a>
+
+        <button id="luxe">Visit MONLUXE</button>
+      </div>
+
+      <!-- nav bar lower part -->
+
+      <div id="lower">
+        <a href="men.page.html">
+          <p class="nav-text">MEN </p>
+      </a>
+      <a href="women.page.html">
+          <p class="nav-text">WOMEN</p>
+      </a>
+        <p class="nav-text">KIDS</p>
+        <p class="nav-text">INDIE</p>
+        <p class="nav-text">HOME AND KITCHEN</p>
+        <input id="nav-inp" type="text" placeholder="Search Mon">
+        <img id="bar" src="./images/heart-solid.svg" alt="">
+        <img id="bar" class="cart" src="./images/bag-shopping-solid.svg" alt="">
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- ..............................................................................................  -->
+  <div class="mainAddress">
+    <form class="addressForm">
+      <h1 style="text-align: center">Add New Address</h1>
+      <p>Street Address</p>
+      <input type="text" class="name" placeholder="Enter your street address" />
+      <p>City</p>
+      <input type="text" class="cardNumber" placeholder="Enter your city" />
+      <p>State</p>
+      <input type="text" class="CVV" placeholder="Enter your state" />
+      <p>Country</p>
+      <input type="text" class="expDate" placeholder="Enter Country" />
+      <input type="submit" id="submit" />
+    </form>
+  </div>
+  <!-- ................................................................................................. -->
+  <footer>
+    <div id="footer-row">
+      <div>
+        <h3>MON AMOUR</h3>
+        <ul>
+
+          <li>Who we are</li>
+          <li>Join Our Team</li>
+          <li>Terms And Conditions</li>
+          <li>We Respect Your Privacy</li>
+          <li>Returns And Refund Policy</li>
+
+        </ul>
+      </div>
+
+      <div>
+        <h3>Help</h3>
+        <ul>
+
+          <li>Track Your Order </li>
+          <li>Frequently Asked Quest</li>
+          <li>Returns</li>
+          <li>Cancellations</li>
+          <li>Payments</li>
+          <li>CustomerCare</li>
+          <li>How Do I Redeem My Coupon</li>
+        </ul>
+      </div>
+
+
+      <div>
+        <h3>Shop by</h3>
+        <ul>
+
+          <li>Men</li>
+          <li>Women</li>
+          <li>Kids</li>
+          <li>Indie Stores</li>
+          <li>New Arrivals</li>
+          <li>Brand Directory</li>
+          <li>Home Collections</li>
+        </ul>
+      </div>
+
+
+      <div>
+        <h3>Follow us</h3>
+        <ul>
+
+          <li>Facebook</li>
+          <li>Instagram-MONlife</li>
+          <li>Instagram- MONLUXE</li>
+          <li>Twitter
+          </li>
+          <li>Pinterest
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <h4 style="text-align: center; color:grey;">
+      ____________________________________________________________________________________________________________________________
+    </h4>
+    <div class="payment" style="display: flex; justify-content: space-around;color: grey;">
+      <div>
+        <h4>Payments Method</h4>
+        <span>Net Banking </span> <span>Verified by VSA </span><span>Secure System </span> <span>Cash on
+          Delivery </span>
+      </div>
+
+      <div>
+        <h4>Secure Systems</h4>
+
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
+
+<script>
+
+
+  // ...............................................................................................
+
+  document.querySelector("form").addEventListener("submit", redirectToPayment);
+  function redirectToPayment(event) {
+    event.preventDefault();
+
+    var streetAddress = document.querySelector(".name").value;
+    var city = document.querySelector(".cardNumber").value;
+    var state = document.querySelector(".CVV").value;
+    var country = document.querySelector(".expDate").value;
+
+    if (streetAddress == "" || city == "" || state == "" || country == "") {
+      alert("Please fill all address fields");
+    } else {
+      alert("Address entered");
+      window.location.href = "payment.html";
+    }
+  }
+
+
+  let cart = document.querySelector('.cart')
+  cart.addEventListener('click', () => {
+
+    window.location.href = "cart.html"
+
+  })
+
+</script>
